@@ -1,5 +1,5 @@
 // @Title  main.go
-// @Description  请填写文件描述（需要改）
+// @Description  网络测速
 // @Author  Rehtt  2020/11/10 下午 4:59
 // @Update  Rehtt  2020/11/10 下午 11:58
 
