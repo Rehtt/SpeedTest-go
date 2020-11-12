@@ -26,7 +26,9 @@ func main() {
 	http.HandleFunc("/getIP", getIp)
 	http.HandleFunc("/speedtest_worker.min.js", js)
 	fmt.Println(":", *port)
-	http.ListenAndServe(":"+*port, nil)
+	if err := http.ListenAndServe(":"+*port, nil); err != nil {
+		fmt.Println(err)
+	}
 }
 
 func js(writer http.ResponseWriter, request *http.Request) {
