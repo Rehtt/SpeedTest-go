@@ -15,6 +15,8 @@ import (
 	"strings"
 )
 
+const version = "speedtest v0.1.0"
+
 func main() {
 	port := flag.String("p", "80", "端口")
 	flag.Parse()
